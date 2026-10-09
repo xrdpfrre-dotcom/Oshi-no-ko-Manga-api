@@ -1,0 +1,6 @@
+{
+  "name": "Oshi no Ko 3D Manga Book",
+  "description": "Interactive 3D Manga Book reader for Oshi no Ko with realistic 3D page-turning physics, 360° camera rotation, chapter selector, and dual reading directions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

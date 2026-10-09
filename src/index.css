@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Cinzel', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #121316;
+    color: #F4F4F6;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle center spine shadow for normal open 2D book spread */
+.book-spine-left {
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.04) 0%,
+    rgba(0, 0, 0, 0) 8%,
+    rgba(0, 0, 0, 0) 90%,
+    rgba(0, 0, 0, 0.12) 97%,
+    rgba(0, 0, 0, 0.28) 100%
+  );
+}
+
+.book-spine-right {
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.04) 0%,
+    rgba(0, 0, 0, 0) 8%,
+    rgba(0, 0, 0, 0) 90%,
+    rgba(0, 0, 0, 0.12) 97%,
+    rgba(0, 0, 0, 0.28) 100%
+  );
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(225, 29, 72, 0.6);
+  border-radius: 3px;
+}
